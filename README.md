@@ -17,16 +17,25 @@ your envifonment file:
 ### Common variables
 
 `MDB_ADMIN_USER` -- superuser DEFAULT: `admin`
+
 `MDB_ADMIN_PASSWORD` -- superuser password NO DEFAULT
+
 `MDB_USER` -- database user NO DEFAULT
+
 `MDB_PASSWORD` -- database user password NO DEFAULT
+
 `MDB_DB` -- database user database NO DEFAULT
 
 ### Replication variables
+
 `MDB_REPLICATION_ROLE` -- set to `master` or `slave` or `none` DEFAULT: `none`
+
 `MDB_MASTER_HOST` -- master IP for slaves NO DEFAULT
+
 `MDB_MASTER_PORT`-- master's mariadb port for slaves DEFAULT: 3306
+
 `MDB_REPLICATION_USER` -- replication user with limited privileges
+
 `MDB_REPLICATION_PASSWORD` -- replication user's password
 
 Building docker image
