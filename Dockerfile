@@ -9,6 +9,7 @@ RUN apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 0xcbcb082a
     rm -rf /var/lib/mysql/* && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* && \
+    sed -i -e "s/^bind-address.*$/bind-address = 0.0.0.0/" /etc/mysql/my.cnf
     rm -rf /var/lib/mysql/*
 
 # Exposed ENV
@@ -16,6 +17,7 @@ ENV MDB_ADMIN_USER admin
 ENV MDB_REPLICATION_ROLE none
 ENV MDB_REPLICATION_USER replicator
 ENV MDB_MASTER_PORT 3306
+ENV TERM xterm-color
 
 VOLUME /var/log
 VOLUME /var/lib/mysql

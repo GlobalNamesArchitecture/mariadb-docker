@@ -56,12 +56,12 @@ $ sudo docker run -d \
   -v some_path/logs:/var/log/mariadb \
   -v some_path/my.cnf:/etc/mysql/my.cnf \
   -p 3306:3306 \
-  gnames/mariadb
+  gnames/mariadb:10.0
 ```
 Simplistic run:
 
 ```bash
-$ sudo docker run -d -e MDB_ADMIN_PASSWORD=secret -p 3306:3306 gnames/mariadb
+$ sudo docker run -d -e MDB_ADMIN_PASSWORD=secret -p 3306:3306 --name mariadb gnames/mariadb:10.0
 ```
 Note on Patches/Pull Requests
 -----------------------------
