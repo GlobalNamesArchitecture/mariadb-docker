@@ -12,8 +12,10 @@ RUN apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 0xcbcb082a
     rm -rf /var/lib/mysql/*
 
 # Exposed ENV
-ENV MYSQL_USER admin
-ENV MYSQL_PASS **Random**
+ENV MDB_USER admin
+ENV MDB_REPLICATION_ROLE none
+ENV MDB_REPLICATION_USER replicator
+ENV MDB_MASTER_PORT 3306
 
 VOLUME /var/log
 VOLUME /var/lib/mysql
