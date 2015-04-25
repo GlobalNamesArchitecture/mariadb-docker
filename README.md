@@ -1,6 +1,10 @@
 MariaDB Docker
 ==============
 
+[![Continuous Integration Status][1]][2]
+[1]: https://circleci.com/gh/GlobalNamesArchitecture/mariadb-docker.svg?style=shield
+[2]: https://circleci.com/gh/GlobalNamesArchitecture/mariadb-docker
+
 General purpose **MariaDb v10.0** Docker Image. It is a derivative of a
 [tutum-docker-mysql][1].  It supports replication, and has a [semisyncronous
 replication][2] plugin installed.
