@@ -16,6 +16,8 @@ your envifonment file:
 
 ### Common variables
 
+Variable             | Description
+---------------------|----------------------------------
 `MDB_ADMIN_USER`     | superuser DEFAULT: `admin`
 `MDB_ADMIN_PASSWORD` | superuser password NO DEFAULT
 `MDB_USER`           | database user NO DEFAULT
@@ -24,6 +26,8 @@ your envifonment file:
 
 ### Replication variables
 
+Variable                   | Description
+---------------------------|---------------------------------------------------
 `MDB_REPLICATION_ROLE`     | set to `master`, `slave` or `none` DEFAULT: `none`
 `MDB_MASTER_HOST`          | master IP for slaves NO DEFAULT
 `MDB_MASTER_PORT`          | master's mariadb port for slaves DEFAULT: 3306
