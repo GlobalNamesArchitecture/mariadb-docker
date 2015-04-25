@@ -1,7 +1,7 @@
 MariaDB Docker
 ==============
 
-General purpose MariaDb v10.0 Docker Image. It is a derivative of a
+General purpose **MariaDb v10.0** Docker Image. It is a derivative of a
 [tutum-docker-mysql][1].  It supports replication, and has a [semisyncronous
 replication][2] plugin installed.
 
@@ -63,6 +63,30 @@ Simplistic run:
 ```bash
 $ sudo docker run -d -e MDB_ADMIN_PASSWORD=secret -p 3306:3306 gnames/mariadb
 ```
+Note on Patches/Pull Requests
+-----------------------------
+
+* Fork the project.
+* Make your feature addition or bug fix.
+* Add tests for it. This is important so I don't break it in a
+  future version unintentionally.
+* Commit, do not mess with rakefile, version, or history.
+  (if you want to have your own version, that is fine but bump
+  version in a commit by itself I can ignore when I pull)
+* Send me a pull request. Bonus points for topic branches.
+
+
+Copyright
+---------
+
+Author -- [Dmitry Mozzherin][3]
+
+
+Copyright (c) 2015 [Marine Biological Laboratory][4]. See [LICENSE][5] for details.
+
 
 [1]: https://github.com/tutumcloud/tutum-docker-mysql
 [2]: https://dev.mysql.com/doc/refman/5.6/en/replication-semisync.html
+[3]: https://github.com/dimus
+[4]: http://mbl.edu
+[5]: https://raw.githubusercontent.com/GlobalNamesArchitecture/mariadb-docker/master/LICENSE
