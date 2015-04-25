@@ -2,12 +2,10 @@ MariaDB Docker
 ==============
 
 [![Continuous Integration Status][1]][2]
-[1]: https://circleci.com/gh/GlobalNamesArchitecture/mariadb-docker.svg?style=shield
-[2]: https://circleci.com/gh/GlobalNamesArchitecture/mariadb-docker
 
 General purpose **MariaDb v10.0** Docker Image. It is a derivative of a
-[tutum-docker-mysql][1].  It supports replication, and has a [semisyncronous
-replication][2] plugin installed.
+[tutum-docker-mysql][3].  It supports replication, and has a [semisyncronous
+replication][4] plugin installed.
 
 Currently it creates one user for one database out of the box and an admin user
 with root-like access.
@@ -83,14 +81,16 @@ Note on Patches/Pull Requests
 Copyright
 ---------
 
-Author -- [Dmitry Mozzherin][3]
+Author -- [Dmitry Mozzherin][5]
 
 
-Copyright (c) 2015 [Marine Biological Laboratory][4]. See [LICENSE][5] for details.
+Copyright (c) 2015 [Marine Biological Laboratory][6]. See [LICENSE][7] for details.
 
 
-[1]: https://github.com/tutumcloud/tutum-docker-mysql
-[2]: https://dev.mysql.com/doc/refman/5.6/en/replication-semisync.html
-[3]: https://github.com/dimus
-[4]: http://mbl.edu
-[5]: https://raw.githubusercontent.com/GlobalNamesArchitecture/mariadb-docker/master/LICENSE
+[1]: https://circleci.com/gh/GlobalNamesArchitecture/mariadb-docker.svg?style=shield
+[2]: https://circleci.com/gh/GlobalNamesArchitecture/mariadb-docker
+[3]: https://github.com/tutumcloud/tutum-docker-mysql
+[4]: https://dev.mysql.com/doc/refman/5.6/en/replication-semisync.html
+[5]: https://github.com/dimus
+[6]: http://mbl.edu
+[7]: https://raw.githubusercontent.com/GlobalNamesArchitecture/mariadb-docker/master/LICENSE
