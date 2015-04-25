@@ -9,7 +9,7 @@ RUN apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 0xcbcb082a
     rm -rf /var/lib/mysql/* && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* && \
-    sed -i -e "s/^bind-address.*$/bind-address = 0.0.0.0/" /etc/mysql/my.cnf
+    sed -i -e "s/^bind-address.*$/bind-address = 0.0.0.0/" /etc/mysql/my.cnf && \
     rm -rf /var/lib/mysql/*
 
 # Exposed ENV
