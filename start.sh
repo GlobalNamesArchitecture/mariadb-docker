@@ -35,7 +35,7 @@ CreateMySQLUsers ()
   echo "Creating '${ADMIN}' user ..." >> ${LOG}
   mysql -uroot -e "CREATE USER '${ADMIN}'@'%' IDENTIFIED BY '${ADMIN_PASS}'"
   mysql -uroot -e "GRANT ALL PRIVILEGES ON *.* TO '${ADMIN}'@'%' WITH GRANT OPTION"
-  if [ "${USER}" != "" && "${USER_PASSWORD}" != "" && "${DB}" != "" ]; then
+  if [ "${USER}" != "" -a "${USER_PASSWORD}" != "" -a "${DB}" != "" ]; then
     echo "Creating ${USER} user ..." >> ${LOG}
     mysql -uroot -e "CREATE USER '${USER}'@'%' IDENTIFIED BY '${USER_PASS}'"
     mysql -uroot -e "GRANT ALL PRIVILEGES ON ${DB}.* TO '${USER}'@'%' WITH GRANT OPTION"
