@@ -1,7 +1,10 @@
 FROM ubuntu:14.04.2
 MAINTAINER Dmitry Mozzherin
 ENV LAST_FULL_REBUILD 2015-04-25
-RUN apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 0xcbcb082a1bb943db && \
+
+RUN groupadd -f -g 301 -r mysql && \
+    useradd -u 301 -g 301 -r -d "/nonexistent" -M -s "/bin/false" mysql && \
+    apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 0xcbcb082a1bb943db && \
     echo 'deb http://mirrors.syringanetworks.net/mariadb/repo/10.0/ubuntu trusty main' >> /etc/apt/sources.list && \
     echo 'deb-src http://mirrors.syringanetworks.net/mariadb/repo/10.0/ubuntu trusty main' >> /etc/apt/sources.list && \
     apt-get update && \
