@@ -110,4 +110,7 @@ if [ "${MDB_REPLICATION_ROLE}" == "slave" ]; then
 fi
 
 tail -F $LOG &
+chmod a+rx /
+chown mysql:mysql -R /var/lib/mysql
+chown mysql:mysql -R /var/log/mysql
 exec mysqld_safe
